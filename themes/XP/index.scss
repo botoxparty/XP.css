@@ -1,5 +1,13 @@
+/**
+ * XP theme for GUI.css
+ * Copyright (c) 2020 Adam Hammad <adamham.dev>
+ * Based on 98.css by Jordan Scales <thatjdanisso.cool>
+ * https://github.com/jdan/98.css/blob/master/LICENSE
+ */
+
 @import "../../gui/index.scss";
 @import "_window.scss";
+@import "_buttons.scss";
 
 :root {
     --default-font: "Pixelated MS Sans Serif", Arial;
