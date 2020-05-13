@@ -12,16 +12,19 @@ const { homepage, version } = require("./package.json");
 
 function buildCSS() {
   const input =
-    `/*! 98.css v${version} - ${homepage} */\n` + fs.readFileSync("style.css");
+    `/*! 98.css v${version} - ${homepage} */\n` +
+    fs.readFileSync("themes/XP/index.scss");
 
   return postcss()
+    .use(require("postcss-import"))
+    .use(require("postcss-nested"))
     .use(require("postcss-inline-svg"))
     .use(require("postcss-css-variables"))
     .use(require("postcss-calc"))
     .use(require("postcss-copy")({ dest: "dist", template: "[name].[ext]" }))
     .use(require("cssnano"))
     .process(input, {
-      from: "style.css",
+      from: "themes/XP/index.scss",
       to: "dist/98.css",
       map: { inline: false },
     })
