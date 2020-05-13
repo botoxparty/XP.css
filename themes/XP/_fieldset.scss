@@ -1,0 +1,39 @@
+fieldset {
+    border: none;
+    box-shadow: none;
+    background: white;
+    border: 1px solid #919b9c;
+    padding-top: 10px;
+}
+legend {
+    background: white;
+}
+.field-row {
+    display: flex;
+    align-items: center;
+    > * {
+        + {
+            * {
+                margin-left: var(--grouped-element-spacing);
+            }
+        }
+    }
+}
+[class^="field-row"] {
+    + {
+        [class^="field-row"] {
+            margin-top: var(--grouped-element-spacing);
+        }
+    }
+}
+.field-row-stacked {
+    display: flex;
+    flex-direction: column;
+    * {
+        + {
+            * {
+                margin-top: var(--grouped-element-spacing);
+            }
+        }
+    }
+}

@@ -275,6 +275,42 @@
     </section>
 
     <section class="component">
+      <h3 id="tabs">Tabs</h3>
+      <div>
+        Tabs...
+      </div>
+
+      <%- example(`
+        <section class="tabs">
+
+          <input checked type="radio" name="tab" id="tab-A" />
+          <label class="tab-title" for="tab-A"><div class="tab-link">Tab 1</div></label>
+          <input type="radio" name="tab" id="tab-B" />
+          <label class="tab-title" for="tab-B"><div class="tab-link">Tab 2</div></label>
+          <input type="radio" name="tab" id="tab-C" />
+          <label class="tab-title" for="tab-C"><div class="tab-link">Tab 3</div></label>
+
+
+          <article class="tab">
+            <h3>Tab Content</h3>
+            <p>
+              You create the content for each tab by using an <code>article</code> tag.
+            </p>
+          </article>
+          <article class="tab">
+            <h3>More...</h3>
+            <p>This is some content</p>
+          </article>
+          <article class="tab">
+            <h3>Tab 3</h3>
+            <p>Lorem Ipsum Dolor Sit</p>
+          </article>
+      
+        </section>
+      `) %>
+    </section>
+
+    <section class="component">
       <h3 id="group-box">GroupBox</h3>
       <div>
         <blockquote>

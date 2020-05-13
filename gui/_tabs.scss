@@ -1,0 +1,66 @@
+:root {
+    --tab-border: 1px solid #888;
+    --tab-bg: white;
+}
+
+.tabs {
+    * {
+        box-sizing: border-box;
+    }
+
+    input {
+        display: none;
+        ~ label {
+            background: #eee;
+            border: 1px solid #ccc;
+            margin-left: -1px;
+            position: relative;
+            left: 1px;
+            line-height: unset;
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+        &:checked + label:after {
+            display: none;
+        }
+    }
+
+    .tab-title {
+        top: 1px;
+        position: relative; /*for #require 1*/
+        cursor: pointer;
+        float: left;
+        background: #ccc;
+        border: var(--tab-border);
+        border-bottom: 0;
+        white-space: nowrap;
+    }
+    .tab-link {
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .tab-title:hover {
+        background: #eee;
+    }
+
+    .tab {
+        clear: both;
+        background: var(--tab-bg);
+        display: none;
+        border: var(--tab-border);
+    }
+
+    article {
+        padding: 14px;
+    }
+
+    input:nth-of-type(2):not(:checked) ~ input:nth-of-type(3):not(:checked) ~ .tab:nth-of-type(1),
+    input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+    input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+        display: block;
+    }
+}

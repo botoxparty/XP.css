@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #c0c0c0;
+  /* background: #c0c0c0; */
+  background: #ece9d8;
 }
 
 main {
@@ -90,6 +91,7 @@ blockquote footer {
   margin: 16px 0;
   padding: 12px 24px;
   border-left: 1px solid #808080;
+  width: 100%;
 }
 
 details {
@@ -103,7 +105,7 @@ summary {
 }
 
 summary::-webkit-details-marker {
-    display: none;
+  display: none;
 }
 
 details[open] summary {
