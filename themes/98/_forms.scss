@@ -12,3 +12,10 @@ input[type="checkbox"] {
         }
     }
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    box-shadow: var(--border-field);
+}

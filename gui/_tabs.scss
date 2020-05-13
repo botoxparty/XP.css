@@ -8,7 +8,7 @@
         box-sizing: border-box;
     }
 
-    input {
+    > input {
         display: none;
         ~ label {
             background: #eee;

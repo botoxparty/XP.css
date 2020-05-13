@@ -135,3 +135,16 @@ input[type="checkbox"][disabled] {
         }
     }
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 23px;
+}
+
+input::selection,
+textarea::selection {
+    background: var(--dialog-blue);
+    color: white;
+}

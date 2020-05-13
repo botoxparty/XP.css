@@ -2,11 +2,13 @@ fieldset {
     border: none;
     box-shadow: none;
     background: white;
-    border: 1px solid #919b9c;
+    border: 1px solid #d0d0bf;
+    border-radius: 4px;
     padding-top: 10px;
 }
 legend {
-    background: white;
+    background: transparent;
+    color: #0046d5;
 }
 .field-row {
     display: flex;

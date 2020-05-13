@@ -20,7 +20,6 @@ textarea {
     font-size: 11px;
     padding: 3px 4px;
     border: none;
-    box-shadow: var(--border-field);
     background-color: var(--button-highlight);
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -242,42 +241,11 @@ input[type="checkbox"][disabled] {
         }
     }
 }
-input[type="text"] {
-    padding: 3px 4px;
-    border: none;
-    box-shadow: var(--border-field);
-    background-color: var(--button-highlight);
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    height: 21px;
-    line-height: 2;
-    &:focus {
-        outline: none;
-    }
-}
-input[type="password"] {
-    padding: 3px 4px;
-    border: none;
-    box-shadow: var(--border-field);
-    background-color: var(--button-highlight);
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0;
-    height: 21px;
-    line-height: 2;
-    &:focus {
-        outline: none;
-    }
-}
+input[type="text"],
+input[type="password"],
 input[type="email"] {
     padding: 3px 4px;
     border: none;
-    box-shadow: var(--border-field);
     background-color: var(--button-highlight);
     box-sizing: border-box;
     -webkit-appearance: none;

@@ -4,7 +4,7 @@
 }
 
 .tabs {
-    input[type="radio"] {
+    > input[type="radio"] {
         ~ label {
             background: linear-gradient(
                 180deg,
@@ -29,7 +29,7 @@
     .tab-link {
         padding: 3px 12px;
     }
-    [type="radio"]:checked + label {
+    > [type="radio"]:checked + label {
         background: #fcfcfe;
         border-bottom: 1px solid transparent;
         z-index: 2;
