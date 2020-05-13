@@ -1,0 +1,61 @@
+/*-------------------------------------------*\
+    Forms
+\*-------------------------------------------*/
+
+:root {
+    --checkmark-width: 11px;
+}
+
+input[type="checkbox"] {
+    + label {
+        &:before {
+            box-shadow: none;
+            border: 1px solid #1d5281;
+            background: linear-gradient(135deg, rgba(220, 220, 215, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+    }
+    &:checked + label {
+        &:after {
+            background: svg-load("./icon/checkmark.svg");
+            left: -17px;
+        }
+    }
+    &:active {
+        + {
+            label {
+                &::before {
+                    box-shadow: none;
+                    background: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
+                }
+            }
+        }
+    }
+}
+
+input[type="checkbox"]:not([disabled]) {
+    + label {
+        &:hover:before {
+            box-shadow: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
+        }
+    }
+}
+
+input[type="checkbox"][disabled] {
+    + {
+        label {
+            &::before {
+                background: white;
+                border: 1px solid #cac8bb;
+            }
+        }
+    }
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background: svg-load("./icon/checkmark-disabled.svg");
+                }
+            }
+        }
+    }
+}

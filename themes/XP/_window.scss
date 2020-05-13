@@ -52,6 +52,9 @@
         &:active {
             box-shadow: none;
         }
+        &:hover {
+            box-shadow: none;
+        }
     }
     button[aria-label="Minimize"] {
         background-image: svg-load("./icon/minimize.svg");
