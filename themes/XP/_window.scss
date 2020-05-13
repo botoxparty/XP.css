@@ -49,10 +49,9 @@
         background-color: #0050ee;
         transition: background 100ms;
         border: none;
-        &:active {
-            box-shadow: none;
-        }
-        &:hover {
+        &:active,
+        &:hover,
+        &:focus {
             box-shadow: none;
         }
     }
