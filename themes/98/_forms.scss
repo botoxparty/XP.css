@@ -16,6 +16,7 @@ input[type="checkbox"] {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-textarea {
+textarea,
+select {
     box-shadow: var(--border-field);
 }

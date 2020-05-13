@@ -1,3 +1,6 @@
+.window {
+    font-family: var(--sans-serif);
+}
 .title-bar-controls {
     button[aria-label="Minimize"] {
         background-image: svg-load("./icon/minimize.svg");

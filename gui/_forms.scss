@@ -3,19 +3,19 @@
 \*-------------------------------------------*/
 
 label {
-    font-family: var(--default-font);
+    font-family: var(--sans-serif);
     -webkit-font-smoothing: none;
     font-size: 11px;
     display: inline-flex;
     align-items: center;
 }
 input {
-    font-family: var(--default-font);
+    font-family: var(--sans-serif);
     -webkit-font-smoothing: none;
     font-size: 11px;
 }
 textarea {
-    font-family: var(--default-font);
+    font-family: var(--sans-serif);
     -webkit-font-smoothing: none;
     font-size: 11px;
     padding: 3px 4px;
@@ -31,12 +31,11 @@ textarea {
     }
 }
 select {
-    font-family: var(--default-font);
+    font-family: var(--sans-serif);
     -webkit-font-smoothing: none;
     font-size: 11px;
     padding: 3px 4px;
     border: none;
-    box-shadow: var(--border-field);
     background-color: var(--button-highlight);
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -67,7 +66,7 @@ select {
     }
 }
 option {
-    font-family: var(--default-font);
+    font-family: var(--sans-serif);
     -webkit-font-smoothing: none;
     font-size: 11px;
 }

@@ -4,10 +4,7 @@
 }
 
 .tabs {
-    * {
-        box-sizing: border-box;
-    }
-
+    margin-bottom: 9px;
     > input {
         display: none;
         ~ label {

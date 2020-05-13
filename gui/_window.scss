@@ -1,5 +1,4 @@
 .window {
-    font-family: var(--default-font);
     -webkit-font-smoothing: none;
     font-size: 11px;
     box-shadow: var(--border-window-outer), var(--border-window-inner);
@@ -7,7 +6,6 @@
     padding: 3px;
 }
 .title-bar {
-    font-family: var(--default-font);
     -webkit-font-smoothing: none;
     font-size: 11px;
     background: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light));

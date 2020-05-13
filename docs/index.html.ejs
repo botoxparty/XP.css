@@ -666,6 +666,70 @@
             </div>
           </div>
         `) %>
+
+
+        <%- example(`
+        <div class="window" style="width: 300px">
+          <div class="title-bar">
+            <div class="title-bar-text">A Window With Tabs and Groups</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <section class="tabs">
+
+              <input checked type="radio" name="tab" id="music" />
+              <label class="tab-title" for="music"><div class="tab-link">Music</div></label>
+              <input type="radio" name="tab" id="dogs" />
+              <label class="tab-title" for="dogs"><div class="tab-link">Dogs</div></label>
+              <input type="radio" name="tab" id="cats" />
+              <label class="tab-title" for="cats"><div class="tab-link">Tab 3</div></label>
+
+
+
+              <article class="tab">
+                <p>Set your listening preferences</p>
+                <fieldset>
+                  <legend>Today's mood</legend>
+                  <div class="field-row">
+                    <input id="radio${getNewId()}" type="radio" name="fieldset-example2">
+                    <label for="radio${getCurrentId()}">Nicki Minaj</label>
+                  </div>
+                  <div class="field-row">
+                    <input id="radio${getNewId()}" type="radio" name="fieldset-example2">
+                    <label for="radio${getCurrentId()}">Bell Towers</label>
+                  </div>
+                  <div class="field-row">
+                    <input id="radio${getNewId()}" type="radio" name="fieldset-example2">
+                    <label for="radio${getCurrentId()}">The Glamorous Monique</label>
+                  </div>
+                  <div class="field-row">
+                    <input id="radio${getNewId()}" type="radio" name="fieldset-example2">
+                    <label for="radio${getCurrentId()}">EN. V</label>
+                  </div>
+                </fieldset>
+              </article>
+              <article class="tab">
+                <h3>Tab 3</h3>
+                <p>Lorem Ipsum Dolor Sit</p>
+              </article>
+              <article class="tab">
+                <p>
+                  You create the content for each tab by using an <code>article</code> tag.
+                </p>
+              </article>
+
+            </section>
+            <section class="field-row" style="justify-content: flex-end">
+              <button>OK</button>
+              <button>Cancel</button>
+            </section>
+          </div>
+        </div>
+      `) %>
       </div>
     </section>
 
