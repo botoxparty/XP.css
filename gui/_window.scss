@@ -4,6 +4,9 @@
     box-shadow: var(--border-window-outer), var(--border-window-inner);
     background: var(--surface);
     padding: 3px;
+    fieldset {
+        margin-bottom: 9px;
+    }
 }
 .title-bar {
     -webkit-font-smoothing: none;
