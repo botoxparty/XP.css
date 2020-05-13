@@ -38,41 +38,50 @@
     button {
         min-width: 21px;
         min-height: 21px;
-        border: 1px solid white;
-        border-radius: 2px;
         margin-left: 2px;
-        background: radial-gradient(circle, rgba(145, 179, 255, 1) 0%, rgba(0, 85, 248, 1) 100%);
-        background-position: top -6px left 100%;
-        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: center;
         box-shadow: none;
-        &:focus {
-            outline: none;
-        }
-        &::after {
-            background-repeat: no-repeat;
-            background-position: center;
-            display: block;
-            content: " ";
-            height: 21px;
-            width: 21px;
+        background-color: #0050ee;
+        transition: background 100ms;
+        &:active {
+            box-shadow: none;
         }
     }
-    button[aria-label="Minimize"]::after {
-        background-position: bottom 3px left 4px;
+    button[aria-label="Minimize"] {
         background-image: svg-load("./icon/minimize.svg");
+        &:hover {
+            background-image: svg-load("./icon/minimize-hover.svg");
+        }
+        &:not(:disabled):active {
+            background-image: svg-load("./icon/minimize-active.svg");
+        }
     }
-    button[aria-label="Maximize"]::after {
+    button[aria-label="Maximize"] {
         background-image: svg-load("./icon/maximize.svg");
+        &:hover {
+            background-image: svg-load("./icon/maximize-hover.svg");
+        }
+        &:not(:disabled):active {
+            background-image: svg-load("./icon/maximize-active.svg");
+        }
     }
-    button[aria-label="Help"]::after {
+    button[aria-label="Help"] {
         background-image: svg-load("./icon/help.svg");
+        &:hover {
+            background-image: svg-load("./icon/help-hover.svg");
+        }
+        &:not(:disabled):active {
+            background-image: svg-load("./icon/help-active.svg");
+        }
     }
     button[aria-label="Close"] {
-        background: radial-gradient(circle, rgba(252, 165, 147, 1) 0%, rgba(227, 16, 0, 1) 116%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fca593",endColorstr="#e31000",GradientType=1);
-        background-position: top -3px left 16px;
-        &::after {
-            background-image: svg-load("./icon/close.svg");
+        background-image: svg-load("./icon/close.svg");
+        &:hover {
+            background-image: svg-load("./icon/close-hover.svg");
+        }
+        &:not(:disabled):active {
+            background-image: svg-load("./icon/close-active.svg");
         }
     }
 }
