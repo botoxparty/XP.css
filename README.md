@@ -1,7 +1,7 @@
 ## XP.css
 
-[![npm](https://98badges.now.sh/api/version)](http://npm.im/xp.css)
-[![gzip size](https://98badges.now.sh/api/size)](https://unpkg.com/xp.css)
+[![npm](https://img.shields.io/npm/v/xp.css)](http://npm.im/xp.css)
+[![gzip size](https://img.shields.io/bundlephobia/minzip/xp.css)](https://unpkg.com/xp.css)
 
 A design system for building faithful recreations of old UIs.
 
