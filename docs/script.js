@@ -1,9 +1,14 @@
 const themeSwitcher = document.getElementById("theme-switcher-select");
 const stylesheet = document.getElementById("theme-stylesheet");
 
-let theme = stylesheet.href;
+const defaultThemeUrl = stylesheet.href.split("/");
+const defaultTheme = defaultThemeUrl[defaultThemeUrl.length - 1];
 
-themeSwitcher.addEventListener("change", (e) => {
-  stylesheet.href = e.target.value;
-  document.getElementsByTagName("h1")[0].innerText = e.target.value;
-});
+setTheme(defaultTheme);
+
+function setTheme(theme) {
+  stylesheet.href = theme;
+  document.getElementsByTagName("h1")[0].innerText = theme;
+}
+
+themeSwitcher.addEventListener("change", (e) => setTheme(e.target.value));
