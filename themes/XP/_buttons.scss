@@ -18,7 +18,8 @@ button {
     border-radius: 3px;
 
     &:not(:disabled) {
-        &:active {
+        &:active,
+        &.active {
             box-shadow: none;
             background: linear-gradient(
                 180deg,
@@ -28,16 +29,17 @@ button {
                 rgba(242, 242, 241, 1) 100%
             );
         }
+        &:hover {
+            box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+        }
     }
-    &:focus {
+    &:focus,
+    &.focused {
         outline: none;
         box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
             inset 2px -2px #89ade4;
     }
     &::-moz-focus-inner {
         border: 0;
-    }
-    &:hover {
-        box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
     }
 }
