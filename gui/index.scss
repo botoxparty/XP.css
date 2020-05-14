@@ -2,7 +2,7 @@
  * GUI.css
  * Copyright (c) 2020 Adam Hammad <adamham.dev>
  * Based on 98.css by Jordan Scales <thatjdanisso.cool>
- * https://github.com/jdan/98.css/blob/master/LICENSE
+ * https://github.com/botoxparty/XP.css/blob/master/LICENSE
  */
 
 @import "_variables.scss";
@@ -12,9 +12,5 @@
 @import "_forms.scss";
 @import "_window.scss";
 @import "_treeview.scss";
-@import "_fieldset.scss";
+@import "_groupbox.scss";
 @import "_tabs.scss";
-
-.surface {
-    background: var(--surface);
-}

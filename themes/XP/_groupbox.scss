@@ -1,12 +1,18 @@
+/*-------------------------------------------*\
+    GroupBox
+\*-------------------------------------------*/
+
 fieldset {
     border: none;
-    box-shadow: var(--border-sunken-outer), var(--border-raised-inner);
-    padding: calc(2 * var(--border-width) + var(--element-spacing));
-    padding-block-start: var(--element-spacing);
-    margin: 0;
+    box-shadow: none;
+    background: white;
+    border: 1px solid #d0d0bf;
+    border-radius: 4px;
+    padding-top: 10px;
 }
 legend {
-    background: var(--surface);
+    background: transparent;
+    color: #0046d5;
 }
 .field-row {
     display: flex;
