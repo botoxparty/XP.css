@@ -43,9 +43,15 @@ Alternatively, you can grab XP.css from [the releases page](https://github.com/b
 
 ```
 npm install xp.css
+
+// For XP
+import "xp.css/dist/XP.css";
+
+// For 98
+import "xp.css/dist/98.css";
 ```
 
-Here is an example of [XP.css being used with React](https://codesandbox.io/s/objective-chandrasekhar-t5t6h?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/late-sound-miqho?file=/index.html).
+Here is an example of [XP.css being used with React](https://codesandbox.io/s/silly-bas-dln9t?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/vigilant-night-2jkz3?file=/index.html).
 
 Refer to the [documentation page](https://jdan.github.io/98.css/) for specific instructions on this library's components.
 
