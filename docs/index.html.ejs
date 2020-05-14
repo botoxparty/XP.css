@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>98.css - A design system for building faithful recreations of old UIs</title>
+  <title>XP.css - A design system for building faithful recreations of old UIs</title>
   <link rel="Shortcut Icon" type="image/x-icon" href="icon.png" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,10 +62,10 @@
     <p>A design system for building faithful recreations of old UIs.</p>
 
     <p>
-      <a href="http://npm.im/98.css" rel="nofollow" style="text-decoration: none">
+      <a href="http://npm.im/xp.css" rel="nofollow" style="text-decoration: none">
         <img alt="npm" src="https://98badges.now.sh/api/version" style="max-width:100%;">
       </a>
-      <a href="https://unpkg.com/98.css" rel="nofollow" style="text-decoration: none">
+      <a href="https://unpkg.com/xp.css" rel="nofollow" style="text-decoration: none">
         <img alt="gzip size" src="https://98badges.now.sh/api/size" style="max-width:100%;">
       </a>
     </p>
@@ -289,10 +289,12 @@
     <section class="component">
       <h3 id="tabs">Tabs</h3>
       <div>
-        Tabs...
-      </div>
-
-      <%- example(`
+        <blockquote>
+          <em>Tabs</em> provide a way to present related information on separate labeled pages.
+          <footer>&mdash; <a href="https://docs.microsoft.com/en-us/windows/win32/uxguide/ctrl-tabs">Microsoft Windows
+              User Experience - Tabs</a></footer>
+        </blockquote>
+        <%- example(`
         <section class="tabs">
 
           <input checked type="radio" name="tab" id="tab-A" />
@@ -339,6 +341,7 @@
 
         </section>
       `) %>
+      </div>
     </section>
 
     <section class="component">
