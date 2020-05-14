@@ -1,3 +1,6 @@
+:root {
+    --title-bar-bg: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light));
+}
 .window {
     font-family: var(--sans-serif);
 }

@@ -10,14 +10,14 @@
   <meta property="og:title" content="98.css" />
   <meta name="Description" content="A design system for building faithful recreations of old UIs." />
   <meta property="og:description" content="A design system for building faithful recreations of old UIs." />
-  <meta property="og:image" content="https://github.com/jdan/98.css/raw/master/docs/window.png?raw=true" />
+  <meta property="og:image" content="https://github.com/botoxparty/98.css/raw/master/docs/window.png?raw=true" />
 
-  <link rel="stylesheet" href="98.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="XP.css">
   <link rel="stylesheet" href="docs.css">
   <link rel="stylesheet" href="vs.css">
 </head>
 
-<body ontouchstart>
+<body class="surface" ontouchstart>
   <aside>
     <ul class="tree-view">
       <li><a href="#intro">Intro</a></li>
@@ -27,6 +27,7 @@
           <li><a href="#button">Button</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
           <li><a href="#option-button">OptionButton</a></li>
+          <li><a href="#tabs">Tabs</a></li>
           <li><a href="#group-box">GroupBox</a></li>
           <li><a href="#text-box">TextBox</a></li>
           <li><a href="#slider">Slider</a></li>
@@ -45,8 +46,18 @@
     </ul>
   </aside>
 
+  <div class="theme-switcher">
+    <section class="field-row">
+      <label>Select a theme</label>
+      <select id="theme-switcher-select">
+        <option value="XP.css">Windows XP</option>
+        <option value="98.css">Windows 98</option>
+      </select>
+    </section>
+  </div>
+
   <main>
-    <h1>98.css</h1>
+    <h1>XP.css</h1>
     <hr>
     <p>A design system for building faithful recreations of old UIs.</p>
 
@@ -61,14 +72,15 @@
 
     <h2 id="intro">Intro</h2>
     <p>
-      98.css is a CSS library for building interfaces that look like Windows 98.
-      See more <a href="https://github.com/jdan/98.css">on GitHub</a>.
+      XP.css is an extention of 98.css. A CSS library for building interfaces that look like old UIs.<br>
+      See <a href="https://github.com/botoxparty/XP.css">XP.css on GitHub</a><br>
+      See <a href="https://github.com/jdan/98.css">98.css on GitHub</a>
     </p>
 
     <div class="window" style="margin: 32px; width: 250px">
       <div class="title-bar">
         <div class="title-bar-text">
-          My First VB4 Program
+          My First Program
         </div>
 
         <div class="title-bar-controls">
@@ -849,5 +861,7 @@
     </p>
   </main>
 </body>
+
+<script src="script.js"></script>
 
 </html>

@@ -156,3 +156,13 @@ button.active {
     overflow-x: scroll;
   }
 }
+
+.theme-switcher {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}

@@ -1,7 +1,6 @@
 input[type="checkbox"] {
     & + label:before {
         box-shadow: none;
-        border: 1px solid #1d5281;
         background: linear-gradient(135deg, rgba(220, 220, 215, 1) 0%, rgba(255, 255, 255, 1) 100%);
     }
     &:checked + label {

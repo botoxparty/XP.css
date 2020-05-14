@@ -199,10 +199,11 @@ input[type="range"].has-box-indicator {
 
 select {
     border: 1px solid #7f9db9;
-}
-select {
     background-image: svg-load("./icon/dropdown.svg");
     background-size: 15px;
+    &:focus {
+        box-shadow: inset 2px 2px white, inset -2px -2px white;
+    }
     &:hover {
         background-image: svg-load("./icon/dropdown-hover.svg");
     }

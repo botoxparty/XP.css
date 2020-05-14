@@ -1,3 +1,6 @@
+:root {
+    --title-bar-bg: black;
+}
 .window {
     -webkit-font-smoothing: none;
     font-size: 11px;
@@ -11,7 +14,7 @@
 .title-bar {
     -webkit-font-smoothing: none;
     font-size: 11px;
-    background: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light));
+    background: var(--title-bar-bg);
     padding: 3px 2px 3px 3px;
     display: flex;
     justify-content: space-between;
@@ -41,7 +44,6 @@
     button[aria-label="Help"] {
     }
     button[aria-label="Close"] {
-        margin-left: 2px;
     }
 }
 .window-body {

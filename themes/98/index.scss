@@ -1,5 +1,8 @@
 @import "../../gui/index.scss";
 @import "_window.scss";
+@import "_forms.scss";
+@import "_tabs.scss";
+
 :root {
     --sans-serif: "Pixelated MS Sans Serif", Arial;
     --surface: #c0c0c0;
@@ -41,4 +44,10 @@
     --border-window-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
     --border-field: inset -1px -1px var(--button-highlight), inset 1px 1px var(--button-shadow),
         inset -2px -2px var(--button-face), inset 2px 2px var(--window-frame);
+}
+
+body {
+    font-family: Arial;
+    font-size: 12px;
+    color: #222222;
 }

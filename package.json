@@ -1,8 +1,8 @@
 {
-  "name": "98.css",
-  "version": "0.1.14",
+  "name": "XP.css",
+  "version": "0.0.1",
   "description": "A design system for building faithful recreations of old UIs",
-  "main": "dist/98.css",
+  "main": "dist/XP.css",
   "directories": {
     "doc": "docs"
   },
@@ -13,18 +13,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdan/98.css.git"
+    "url": "git+https://github.com/botoxparty/XP.css.git"
   },
   "keywords": [
     "css",
-    "windows98"
+    "windows98",
+    "windowsXP",
+    "gui"
   ],
-  "author": "Jordan Scales <scalesjordan@gmail.com>",
+  "author": "Adam Hammad <mail@adamham.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jdan/98.css/issues"
+    "url": "https://github.com/botoxparty/XP.css/issues"
   },
-  "homepage": "https://github.com/jdan/98.css",
+  "homepage": "https://github.com/botoxparty/XP.css",
   "devDependencies": {
     "chokidar": "^3.3.1",
     "cssnano": "^4.1.10",
