@@ -1,32 +1,32 @@
-## 98.css
+## XP.css
 
-[![npm](https://98badges.now.sh/api/version)](http://npm.im/gui.css)
-[![gzip size](https://98badges.now.sh/api/size)](https://unpkg.com/gui.css)
+[![npm](https://98badges.now.sh/api/version)](http://npm.im/xp.css)
+[![gzip size](https://98badges.now.sh/api/size)](https://unpkg.com/xp.css)
 
 A design system for building faithful recreations of old UIs.
 
-<img alt="a screenshot of a window with the title 'My First VB4 Program' and two buttons OK and Cancel, styled like a Windows 98 dialog" src="https://github.com/jdan/98.css/blob/master/docs/window.png?raw=true" height="133"> <img alt="a magnified view showing pixel-perfect borders on a scrollbar and button element" src="https://github.com/jdan/98.css/blob/master/docs/zoom.png?raw=true?raw=true" height="133">
+<img alt="a screenshot of a window with the title 'My First Program' and two buttons OK and Cancel, styled like a Windows XP dialog" src="https://github.com/jdan/98.css/blob/master/docs/window.png?raw=true" height="133"> <img alt="a magnified view showing pixel-perfect borders on a scrollbar and button element" src="https://github.com/jdan/98.css/blob/master/docs/zoom.png?raw=true?raw=true" height="133">
 
-GUI.css is a CSS file that takes semantic HTML and makes it look pretty. It does not ship with any JavaScript, so it is compatible with your frontend framework of choice.
+XP.css is an extension of 98.css. A CSS file that takes semantic HTML and makes it look pretty. It does not ship with any JavaScript, so it is compatible with your frontend framework of choice.
 
 ### Installation / Usage
 
-The easiest way to use GUI.css is to import it from [unpkg](https://unpkg.com/).
+The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>98.css example</title>
+    <title>XP.css example</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
   </head>
 
   <body>
     <div class="window" style="margin: 32px; width: 250px">
       <div class="title-bar">
         <div class="title-bar-text">
-          My First VB4 Program
+          My First Program
         </div>
       </div>
       <div class="window-body">
@@ -37,13 +37,13 @@ The easiest way to use GUI.css is to import it from [unpkg](https://unpkg.com/).
 </html>
 ```
 
-Alternatively, you can grab 98.css for [the releases page](https://github.com/jdan/98.css/releases) or [npm](https://www.npmjs.com/package/98.css).
+Alternatively, you can grab XP.css from [the releases page](https://github.com/botoxparty/XP.css/releases) or [npm](https://www.npmjs.com/package/xp.css).
 
 ```
-npm install 98.css
+npm install xp.css
 ```
 
-Here is an example of [98.css being used with React](https://codesandbox.io/s/objective-chandrasekhar-t5t6h?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/late-sound-miqho?file=/index.html).
+Here is an example of [XP.css being used with React](https://codesandbox.io/s/objective-chandrasekhar-t5t6h?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/late-sound-miqho?file=/index.html).
 
 Refer to the [documentation page](https://jdan.github.io/98.css/) for specific instructions on this library's components.
 
