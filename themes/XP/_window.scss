@@ -52,7 +52,7 @@
         &:active,
         &:hover,
         &:focus {
-            box-shadow: none;
+            box-shadow: none !important;
         }
     }
     button[aria-label="Minimize"] {
