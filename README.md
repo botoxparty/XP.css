@@ -39,7 +39,7 @@ The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
 </html>
 ```
 
-Alternatively, you can grab XP.css from [the releases page](https://github.com/botoxparty/XP.css/releases) or [npm](https://www.npmjs.com/package/xp.css).
+Alternatively, you can grab XP.css from [npm](https://www.npmjs.com/package/xp.css).
 
 ```
 npm install xp.css
