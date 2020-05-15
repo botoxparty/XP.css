@@ -21,7 +21,10 @@ The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
   <head>
     <title>XP.css example</title>
     <meta charset="UTF-8" />
+    // Windows XP Theme (include only one theme at a time)
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    // Windows 98 Theme (include only one theme at a time)
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.0/dist/98.css" />
   </head>
 
   <body>
@@ -43,6 +46,8 @@ Alternatively, you can grab XP.css from [npm](https://www.npmjs.com/package/xp.c
 
 ```
 npm install xp.css
+
+Usage:
 
 // For XP
 import "xp.css/dist/XP.css";
