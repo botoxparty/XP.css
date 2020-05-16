@@ -16,3 +16,11 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Perfect DOS VGA 437 Win";
+    src: url("fonts/converted/PerfectDOSVGA437Win.woff2") format("woff2"),
+        url("fonts/converted/PerfectDOSVGA437Win.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

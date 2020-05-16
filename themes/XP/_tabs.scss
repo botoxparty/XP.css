@@ -23,7 +23,6 @@ section.tabs {
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
         top: 4px;
-        transition: top 150ms;
         &:before,
         &:after {
             display: none;
@@ -41,6 +40,10 @@ section.tabs {
             z-index: 99;
             border-top: 1px solid #e68b2c;
             box-shadow: inset 0px 2px #ffc73c;
+            margin-right: 0;
+            &:not(:first-of-type) {
+                margin-left: -3px;
+            }
             &:hover {
                 background: #fcfcfe;
             }

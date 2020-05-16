@@ -33,17 +33,22 @@ a {
         outline: 1px dotted var(--link-blue);
     }
 }
-pre {
-    display: block;
-    background: var(--button-highlight);
-    box-shadow: var(--border-field);
-    padding: 12px 8px;
-    margin: 0;
-}
+
 code {
     font-family: monospace;
     * {
         font-family: monospace;
+    }
+}
+pre {
+    display: block;
+    padding: 12px 8px;
+    background-color: black;
+    color: #c0c0c0;
+    font-family: "Perfect DOS VGA 437 Win";
+    margin: 0;
+    * {
+        font-family: "Perfect DOS VGA 437 Win";
     }
 }
 summary {

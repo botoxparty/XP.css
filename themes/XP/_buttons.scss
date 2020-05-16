@@ -16,7 +16,6 @@ button {
     );
     box-shadow: none;
     border-radius: 3px;
-
     &:not(:disabled) {
         &:active,
         &.active {
@@ -35,7 +34,6 @@ button {
     }
     &:focus,
     &.focused {
-        outline: none;
         box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
             inset 2px -2px #89ade4;
     }

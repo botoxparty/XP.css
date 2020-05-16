@@ -4,11 +4,9 @@
 
 ul.tree-view {
     font-family: var(--sans-serif);
-    -webkit-font-smoothing: none;
     font-size: 11px;
     display: block;
     background: var(--button-highlight);
-    box-shadow: var(--border-field);
     padding: 6px;
     margin: 0;
     li {
