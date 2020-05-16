@@ -24,7 +24,7 @@ The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
     // Windows XP Theme (include only one theme at a time)
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     // Windows 98 Theme (include only one theme at a time)
-    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.1/dist/98.css" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.2/dist/98.css" />
   </head>
 
   <body>
@@ -58,7 +58,7 @@ import "xp.css/dist/98.css";
 
 Here is an example of [XP.css being used with React](https://codesandbox.io/s/silly-bas-dln9t?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/vigilant-night-2jkz3?file=/index.html).
 
-Refer to the [documentation page](https://jdan.github.io/98.css/) for specific instructions on this library's components.
+Refer to the [documentation page](https://botoxparty.github.io/XP.css/) for specific instructions on this library's components.
 
 ### Developing
 

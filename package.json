@@ -1,6 +1,6 @@
 {
   "name": "xp.css",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A design system for building faithful recreations of old UIs",
   "main": "dist/XP.css",
   "directories": {
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/botoxparty/XP.css/issues"
   },
-  "homepage": "https://github.com/botoxparty/XP.css",
+  "homepage": "https://botoxparty.github.io/XP.css/",
   "devDependencies": {
     "chokidar": "^3.3.1",
     "cssnano": "^4.1.10",
