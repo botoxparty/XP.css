@@ -16,34 +16,23 @@ section.tabs {
             rgba(240, 240, 234, 1) 95%,
             rgba(236, 235, 229, 1) 100%
         );
-        border: var(--tab-border);
+        margin-left: -1px;
         margin-right: 2px;
         border-radius: 0;
         border-color: #91a7b4;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
-        top: 4px;
-        &:before,
-        &:after {
-            display: none;
-        }
         &:hover {
             box-shadow: unset;
             border-top: 1px solid #e68b2c;
             box-shadow: inset 0px 2px #ffc73c;
         }
         &.active {
-            top: 1px;
             background: #fcfcfe;
             border-color: #919b9c;
             border-bottom: 1px solid transparent;
-            z-index: 99;
             border-top: 1px solid #e68b2c;
             box-shadow: inset 0px 2px #ffc73c;
-            margin-right: 0;
-            &:not(:first-of-type) {
-                margin-left: -3px;
-            }
             &:hover {
                 background: #fcfcfe;
             }
@@ -52,7 +41,6 @@ section.tabs {
     }
     article.tab-content {
         z-index: 9;
-        position: relative;
         box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
     }
 }
