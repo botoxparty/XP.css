@@ -22,6 +22,7 @@ section.tabs {
         border-color: #91a7b4;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
+        padding: 0 12px 3px;
         &:hover {
             box-shadow: unset;
             border-top: 1px solid #e68b2c;
@@ -37,7 +38,19 @@ section.tabs {
                 background: #fcfcfe;
             }
         }
-        padding: 0 12px 3px;
+        &:first-of-type {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                top: 100%;
+                left: -1px;
+                height: 2px;
+                width: 0;
+                border-left: var(--tab-border);
+            }
+        }
     }
     article.tab-content {
         z-index: 9;

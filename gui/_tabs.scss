@@ -36,19 +36,6 @@ section.tabs {
             &:not(:first-of-type) {
                 margin-left: -3px;
             }
-            &:first-of-type {
-                &::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    z-index: -1;
-                    top: 100%;
-                    left: -1px;
-                    height: 2px;
-                    width: 0;
-                    border-left: var(--tab-border);
-                }
-            }
         }
     }
     article.tab-content {
