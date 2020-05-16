@@ -24,7 +24,7 @@ The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
     // Windows XP Theme (include only one theme at a time)
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     // Windows 98 Theme (include only one theme at a time)
-    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.0/dist/98.css" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.1/dist/98.css" />
   </head>
 
   <body>
