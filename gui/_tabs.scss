@@ -22,10 +22,6 @@ section.tabs {
         line-height: unset;
         min-width: unset;
         top: 4px;
-        &:before,
-        &:after {
-            display: none;
-        }
         &:focus {
             outline: 1px dotted black;
             outline-offset: -4px;
@@ -39,6 +35,19 @@ section.tabs {
             margin-right: -1px;
             &:not(:first-of-type) {
                 margin-left: -3px;
+            }
+            &:first-of-type {
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    top: 100%;
+                    left: -1px;
+                    height: 2px;
+                    width: 0;
+                    border-left: var(--tab-border);
+                }
             }
         }
     }
