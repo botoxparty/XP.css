@@ -1,38 +1,35 @@
+/*-------------------------------------------*\
+    Tabs
+\*-------------------------------------------*/
+
 :root {
     --tab-border: none;
 }
 
-.tabs {
-    > input[type="radio"] {
-        ~ label {
-            background: var(--surface);
-            box-shadow: inset 1px 1px #dfdfdf, inset 2px 2px #fff;
-            margin-right: 2px;
-            border-top-right-radius: 3px;
-            border-top-left-radius: 3px;
-            &:before,
-            &:after {
-                display: none;
-            }
-        }
-        &:checked + label:after {
+section.tabs {
+    a.tab-title {
+        top: 2px;
+        background: var(--surface);
+        box-shadow: inset 1px 1px #dfdfdf, inset 2px 2px #fff;
+        margin-right: 2px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        &:before,
+        &:after {
             display: none;
         }
-    }
-    .tab-title {
-        top: 3px;
-    }
-    .tab-link {
+        &.active {
+            z-index: 2;
+            box-shadow: inset 1px 1px #dfdfdf, inset 2px 2px #fff;
+            border-bottom: 2px solid var(--surface);
+        }
+        &:active {
+            outline: 1px dotted black;
+            outline-offset: -4px;
+        }
         padding: 3px 12px;
     }
-    > [type="radio"]:checked + label {
-        z-index: 2;
-        box-shadow: inset 1px 1px #dfdfdf, inset 2px 2px #fff;
-    }
-    article {
-        box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
-    }
-    .tab {
+    article.tab-content {
         box-shadow: var(--border-window-outer), var(--border-window-inner);
     }
 }

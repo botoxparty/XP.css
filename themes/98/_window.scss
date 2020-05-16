@@ -1,8 +1,13 @@
+/*-------------------------------------------*\
+    Window
+\*-------------------------------------------*/
+
 :root {
     --title-bar-bg: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light));
 }
 .window {
     font-family: var(--sans-serif);
+    -webkit-font-smoothing: none;
 }
 .title-bar-controls {
     button[aria-label="Minimize"] {

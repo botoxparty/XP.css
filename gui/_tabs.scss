@@ -1,63 +1,48 @@
+/*-------------------------------------------*\
+    Tabs
+\*-------------------------------------------*/
+
 :root {
     --tab-border: 1px solid #888;
     --tab-bg: var(--surface);
 }
 
-.tabs {
+section.tabs {
     margin-bottom: 9px;
-    > input {
-        display: none;
-        ~ label {
-            background: #eee;
-            border: 1px solid #ccc;
-            margin-left: -1px;
-            position: relative;
-            left: 1px;
-            line-height: unset;
-            &:before,
-            &:after {
-                display: none;
-            }
-        }
-        &:checked + label:after {
-            display: none;
-        }
-    }
-
-    .tab-title {
+    button.tab-title {
         top: 1px;
-        position: relative; /*for #require 1*/
         cursor: pointer;
         float: left;
         background: #ccc;
         border: var(--tab-border);
         border-bottom: 0;
         white-space: nowrap;
+        margin-left: -1px;
+        position: relative;
+        left: 1px;
+        line-height: unset;
+        min-width: unset;
+        &:before,
+        &:after {
+            display: none;
+        }
+        &:focus {
+            outline: 1px dotted black;
+            outline-offset: -4px;
+            box-shadow: unset;
+        }
+        &:hover {
+            background: #eee;
+        }
     }
-    .tab-link {
-        overflow: hidden;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .tab-title:hover {
-        background: #eee;
-    }
-
-    .tab {
+    article.tab-content {
+        padding: 14px;
         clear: both;
         background: var(--tab-bg);
         display: none;
         border: var(--tab-border);
-    }
-
-    article {
-        padding: 14px;
-    }
-
-    input:nth-of-type(2):not(:checked) ~ input:nth-of-type(3):not(:checked) ~ .tab:nth-of-type(1),
-    input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
-    input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
-        display: block;
+        &.active {
+            display: block;
+        }
     }
 }

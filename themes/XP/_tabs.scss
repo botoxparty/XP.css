@@ -7,40 +7,49 @@
     --tab-border: 1px solid #919b9c;
 }
 
-.tabs {
-    > input[type="radio"] {
-        ~ label {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 1) 0%,
-                rgba(250, 250, 249, 1) 26%,
-                rgba(240, 240, 234, 1) 95%,
-                rgba(236, 235, 229, 1) 100%
-            );
-            border: var(--tab-border);
-            margin-right: 2px;
-            border-top-right-radius: 3px;
-            border-top-left-radius: 3px;
-            &:before,
-            &:after {
-                display: none;
-            }
-        }
-        &:checked + label:after {
+section.tabs {
+    button.tab-title {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(250, 250, 249, 1) 26%,
+            rgba(240, 240, 234, 1) 95%,
+            rgba(236, 235, 229, 1) 100%
+        );
+        border: var(--tab-border);
+        margin-right: 2px;
+        border-radius: 0;
+        border-color: #91a7b4;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        top: 4px;
+        transition: top 150ms;
+        &:before,
+        &:after {
             display: none;
         }
+        &:hover {
+            box-shadow: unset;
+            border-top: 1px solid #e68b2c;
+            box-shadow: inset 0px 2px #ffc73c;
+        }
+        &.active {
+            top: 1px;
+            background: #fcfcfe;
+            border-color: #919b9c;
+            border-bottom: 1px solid transparent;
+            z-index: 99;
+            border-top: 1px solid #e68b2c;
+            box-shadow: inset 0px 2px #ffc73c;
+            &:hover {
+                background: #fcfcfe;
+            }
+        }
+        padding: 0 12px 3px;
     }
-    .tab-link {
-        padding: 3px 12px;
-    }
-    > [type="radio"]:checked + label {
-        background: #fcfcfe;
-        border-bottom: 1px solid transparent;
-        z-index: 2;
-        border-top: 1px solid #e68b2c;
-        box-shadow: inset 0px 2px #ffc73c;
-    }
-    article {
+    article.tab-content {
+        z-index: 9;
+        position: relative;
         box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
     }
 }

@@ -14,6 +14,14 @@
     --radio-border-disabled: 1px solid #cac8bb;
 }
 
+label,
+select,
+input,
+textarea,
+option {
+    -webkit-font-smoothing: antialiased;
+}
+
 select {
     border: 1px solid #7f9db9;
     background-image: svg-load("./icon/dropdown.svg");

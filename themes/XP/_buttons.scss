@@ -4,7 +4,7 @@
 
 button {
     font-family: var(--sans-serif);
-    -webkit-font-smoothing: none;
+    -webkit-font-smoothing: antialiased;
     font-size: 11px;
     box-sizing: border-box;
     border: 1px solid #003c74;

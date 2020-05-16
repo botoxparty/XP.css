@@ -1,3 +1,7 @@
+/*-------------------------------------------*\
+    Forms
+\*-------------------------------------------*/
+
 input[type="checkbox"] {
     & + label:before {
         box-shadow: var(--border-field);
@@ -18,4 +22,12 @@ input[type="email"],
 textarea,
 select {
     box-shadow: var(--border-field);
+}
+
+label,
+select,
+input,
+textarea,
+option {
+    -webkit-font-smoothing: none;
 }

@@ -6,7 +6,6 @@
     --title-bar-bg: black;
 }
 .window {
-    -webkit-font-smoothing: none;
     font-size: 11px;
     box-shadow: var(--border-window-outer), var(--border-window-inner);
     background: var(--surface);
@@ -16,7 +15,6 @@
     }
 }
 .title-bar {
-    -webkit-font-smoothing: none;
     font-size: 11px;
     background: var(--title-bar-bg);
     padding: 3px 2px 3px 3px;
