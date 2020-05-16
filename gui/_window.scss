@@ -50,4 +50,7 @@
 }
 .window-body {
     margin: var(--element-spacing);
+    pre {
+        margin: -8px;
+    }
 }
