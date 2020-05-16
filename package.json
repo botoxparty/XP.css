@@ -1,6 +1,6 @@
 {
   "name": "xp.css",
-  "version": "0.1.20",
+  "version": "0.2.0",
   "description": "A design system for building faithful recreations of old UIs",
   "main": "dist/XP.css",
   "directories": {
