@@ -25,7 +25,10 @@ for (let i = 0; i < tabs.length; i++) {
       e.preventDefault();
 
       tabButtons.forEach((button) => {
-        if (button.id === e.target.id) {
+        if (
+          button.getAttribute("aria-controls") ===
+          e.target.getAttribute("aria-controls")
+        ) {
           button.setAttribute("aria-selected", true);
           openTab(e, tab);
         } else {
@@ -42,7 +45,7 @@ function openTab(event, tab) {
     p.setAttribute("hidden", true);
   });
   const article = tab.parentNode.querySelector(
-    `[aria-labelledby='${event.target.id}']`
+    `[role="tabpanel"]#${event.target.getAttribute("aria-controls")}`
   );
   article.removeAttribute("hidden");
 }
