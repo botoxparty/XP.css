@@ -13,21 +13,23 @@ function setTheme(theme) {
 
 themeSwitcher.addEventListener("change", (e) => setTheme(e.target.value));
 
-const tabs = document.querySelectorAll(".tabs");
+const tabs = document.querySelectorAll("menu[role=tablist]");
 
 for (let i = 0; i < tabs.length; i++) {
   const tab = tabs[i];
 
-  const tabButtons = tab.querySelectorAll("button.tab-title");
+  const tabButtons = tab.querySelectorAll("menu[role=tablist] > button");
 
   tabButtons.forEach((btn) =>
     btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
       tabButtons.forEach((button) => {
         if (button.id === e.target.id) {
-          button.classList.add("active");
+          button.setAttribute("aria-selected", true);
           openTab(e, tab);
         } else {
-          button.classList.remove("active");
+          button.setAttribute("aria-selected", false);
         }
       });
     })
@@ -35,8 +37,12 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 function openTab(event, tab) {
-  const articles = tab.querySelectorAll("article");
-  articles.forEach((art) => art.classList.remove("active"));
-  const article = tab.querySelector(`[for=${event.target.id}]`);
-  article.classList.add("active");
+  const articles = tab.parentNode.querySelectorAll('[role="tabpanel"]');
+  articles.forEach((p) => {
+    p.setAttribute("hidden", true);
+  });
+  const article = tab.parentNode.querySelector(
+    `[aria-labelledby='${event.target.id}']`
+  );
+  article.removeAttribute("hidden");
 }

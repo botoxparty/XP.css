@@ -7,8 +7,8 @@
     --tab-border: 1px solid #919b9c;
 }
 
-section.tabs {
-    button.tab-title {
+menu[role="tablist"] {
+    button {
         background: linear-gradient(
             180deg,
             rgba(255, 255, 255, 1) 0%,
@@ -28,32 +28,29 @@ section.tabs {
             border-top: 1px solid #e68b2c;
             box-shadow: inset 0px 2px #ffc73c;
         }
-        &.active {
+        &[aria-selected="true"] {
             background: #fcfcfe;
             border-color: #919b9c;
+            margin-right: -1px;
             border-bottom: 1px solid transparent;
             border-top: 1px solid #e68b2c;
             box-shadow: inset 0px 2px #ffc73c;
-            &:hover {
-                background: #fcfcfe;
-            }
-        }
-        &:first-of-type {
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                z-index: -1;
-                top: 100%;
-                left: -1px;
-                height: 2px;
-                width: 0;
-                border-left: var(--tab-border);
+            &:first-of-type {
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    top: 100%;
+                    left: -1px;
+                    height: 2px;
+                    width: 0;
+                    border-left: var(--tab-border);
+                }
             }
         }
     }
-    article.tab-content {
-        z-index: 9;
-        box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
-    }
+}
+[role="tabpanel"] {
+    box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0px rgba(208, 206, 191, 0.75);
 }
