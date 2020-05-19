@@ -194,7 +194,7 @@ input[type="checkbox"] {
                     height: var(--checkmark-width);
                     position: absolute;
                     background: svg-load("./icon/checkmark.svg");
-                    top: 0;
+                    top: 1px;
                 }
             }
         }
