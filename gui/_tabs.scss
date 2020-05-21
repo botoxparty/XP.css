@@ -7,46 +7,54 @@
     --tab-bg: var(--surface);
 }
 
-section.tabs {
-    margin-bottom: 9px;
-    button.tab-title {
-        top: 1px;
-        cursor: pointer;
-        float: left;
-        background: #ccc;
-        border: var(--tab-border);
-        border-bottom: 0;
-        white-space: nowrap;
-        position: relative;
-        left: 1px;
-        line-height: unset;
+[role="tabpanel"] {
+    position: relative;
+    z-index: 2;
+}
+
+menu[role="tablist"] {
+    position: relative;
+    margin: 0 0 -2px 0;
+    text-indent: 0;
+    list-style-type: none;
+    display: flex;
+    padding-left: 3px;
+    button {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        z-index: 1;
+        display: block;
+        color: #222;
+        text-decoration: none;
         min-width: unset;
-        top: 4px;
+        &[aria-selected="true"] {
+            padding-bottom: 2px;
+            margin-top: -2px;
+            background-color: var(--surface);
+            position: relative;
+            z-index: 8;
+            margin-left: -3px;
+            margin-bottom: 1px;
+        }
         &:focus {
-            outline: 1px dotted black;
+            outline: 1px dotted #222;
             outline-offset: -4px;
         }
-        &:hover {
-            background: #eee;
-        }
-        &.active {
-            top: 1px;
-            z-index: 99;
-            margin-right: -1px;
-            &:not(:first-of-type) {
-                margin-left: -3px;
-            }
+    }
+    &.justified {
+        button {
+            flex-grow: 1;
+            text-align: center;
         }
     }
-    article.tab-content {
-        padding: 14px;
-        clear: both;
-        background: var(--tab-bg);
-        display: none;
-        border: var(--tab-border);
-        position: relative;
-        &.active {
-            display: block;
-        }
-    }
+}
+
+[role="tabpanel"] {
+    padding: 14px;
+    clear: both;
+    background: var(--tab-bg);
+    border: var(--tab-border);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 9px;
 }
