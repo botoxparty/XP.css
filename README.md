@@ -5,7 +5,7 @@
 
 A design system for building faithful recreations of old UIs.
 
-<img alt="a screenshot of a window with the title 'My First Program' and two buttons OK and Cancel, styled like a Windows XP dialog" src="https://github.com/botoxparty/XP.css/blob/master/docs/window.png?raw=true" height="133">
+<img alt="a screenshot of a window with the title 'My First Program' and two buttons OK and Cancel, styled like a Windows XP dialog" src="https://github.com/botoxparty/XP.css/blob/main/docs/window.png?raw=true" height="133">
 
 <img alt="a screenshot of a window with the title 'My First Program' and two buttons OK and Cancel, styled like a Windows 98 dialog" src="https://github.com/jdan/98.css/blob/main/docs/window.png?raw=true" height="133">
 
@@ -64,9 +64,9 @@ Refer to the [documentation page](https://botoxparty.github.io/XP.css/) for spec
 
 Clone the repo and run `npm install`.
 
-The core styles are managed in [`gui`](https://github.com/botoxparty/XP.css/tree/master/gui).
+The core styles are managed in [`gui`](https://github.com/botoxparty/XP.css/tree/main/gui).
 
-To create your own theme for the GUI you can extend the core styles. See the XP and 98 [`themes`](https://github.com/botoxparty/XP.css/tree/master/themes)
+To create your own theme for the GUI you can extend the core styles. See the XP and 98 [`themes`](https://github.com/botoxparty/XP.css/tree/main/themes)
 
 You can use `npm start` to start a development environment that will watch for file changes and rebuild the files, reloading your browser in the process.
 
@@ -80,4 +80,4 @@ Also please refer to [the GitHub issues page](https://github.com/jdan/98.css/iss
 
 ### License
 
-[MIT](https://github.com/botoxparty/XP.css/blob/master/LICENSE)
+[MIT](https://github.com/botoxparty/XP.css/blob/main/LICENSE)
