@@ -14,12 +14,12 @@ button {
         rgba(236, 235, 229, 1) 86%,
         rgba(216, 208, 196, 1) 100%
     );
-    box-shadow: none;
+    box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.3), -1px -1px 1px 0px rgba(0,0,0,0.15);
     border-radius: 3px;
     &:not(:disabled) {
         &:active,
         &.active {
-            box-shadow: none;
+            box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.3), -1px -1px 1px 0px rgba(0,0,0,0.15);
             background: linear-gradient(
                 180deg,
                 rgba(205, 202, 195, 1) 0%,
@@ -35,7 +35,7 @@ button {
     &:focus,
     &.focused {
         box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4,
-            inset 2px -2px #89ade4;
+            inset 2px -2px #89ade4, 1px 1px 1px 0px rgba(255,255,255,0.3), -1px -1px 1px 0px rgba(0,0,0,0.15);
     }
     &::-moz-focus-inner {
         border: 0;
