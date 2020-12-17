@@ -54,3 +54,16 @@
         margin: -8px;
     }
 }
+
+.window-footer {
+    margin: 0px 1px;
+    display: flex;
+    gap: 1px;
+}
+
+.window-footer-field {
+    box-shadow: var(--border-footer-field);
+    flex-grow: 1;
+    padding: 2px 3px;
+    margin: 0;
+}
