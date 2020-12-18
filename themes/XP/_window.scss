@@ -93,14 +93,14 @@
     }
 }
 
-.window-footer {
+.status-bar {
     margin: 0 3px;
     box-shadow: inset 0px 1px 2px var(--button-shadow);
     padding: 2px 1px;
     gap: 0px;
 }
 
-.window-footer-field {
+.status-bar-field {
     font-family: var(--sans-serif);
     -webkit-font-smoothing: antialiased;
     box-shadow: none;
