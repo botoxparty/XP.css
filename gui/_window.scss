@@ -54,3 +54,16 @@
         margin: -8px;
     }
 }
+
+.status-bar {
+    margin: 0px 1px;
+    display: flex;
+    gap: 1px;
+}
+
+.status-bar-field {
+    box-shadow: var(--border-status-bar-field);
+    flex-grow: 1;
+    padding: 2px 3px;
+    margin: 0;
+}

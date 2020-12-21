@@ -52,4 +52,6 @@
     --border-window-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
     --border-field: inset -1px -1px var(--button-highlight), inset 1px 1px var(--button-shadow),
         inset -2px -2px var(--button-face), inset 2px 2px var(--window-frame);
+
+    --border-status-bar-field: inset -1px -1px var(--button-face), inset 1px 1px var(--button-shadow);
 }
