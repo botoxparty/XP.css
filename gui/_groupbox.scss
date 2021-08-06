@@ -3,8 +3,7 @@
 \*-------------------------------------------*/
 
 fieldset {
-    border: none;
-    box-shadow: var(--border-sunken-outer), var(--border-raised-inner);
+    border-image: svg-load("./icon/groupbox-border.svg") 2;
     padding: calc(2 * var(--border-width) + var(--element-spacing));
     padding-block-start: var(--element-spacing);
     margin: 0;
