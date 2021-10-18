@@ -240,7 +240,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
     padding: 3px 4px;
-    border: none;
+    border: solid #7f9db9 1px;
     background-color: var(--button-highlight);
     box-sizing: border-box;
     -webkit-appearance: none;
