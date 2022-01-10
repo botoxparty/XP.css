@@ -1,0 +1,109 @@
+/*-------------------------------------------*\
+    Scrollbars
+\*-------------------------------------------*/
+
+.scrollbar {
+    position: absolute;
+    right: 0;
+    width: 21px;
+    height: 100%;
+    background: linear-gradient(90deg, #f3f1ec, #fdfdfa);
+    border-right: 1px solid #eeede4;
+    border-left-color: 1px solid #eeede5;
+}
+
+.scrollbar__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1px;
+    width: 18px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, #baccf6 1px, #c0d1f7 2px, #bfd4fc 10px, #b9cffc, #bbccf4 100%);
+    box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7, 0 1px 0 0 #d1e0fd inset;
+    min-height: 50px;
+    top: 20%;
+
+    &::before {
+        content: '';
+        width: 8px;
+        height: 7px;
+        background-image: linear-gradient(to bottom, #eef4fe, #8cb0f8);
+        background-size: 7px 2px;
+        background-repeat: repeat-y;
+        box-shadow: 1px 1px 0px #9ebcf9;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to right, #d6e7ff, #cae0ff);
+        box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7, 0 0 0 1px #a9cbff inset;
+
+        &::before {
+            background-image: linear-gradient(to bottom, #fcfdff, #9cc5ff);
+            box-shadow: 1px 1px 0 #9cc5ff;
+        }
+    }
+
+    &:active {
+        background-image: linear-gradient(to right, #9fb4ec 1px, #a7bef5 2px, #a1bcfa 8px, #9ab9fa 9px, #92b4f9, #96b0ec);
+        box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7, 1px 0 0 0 #7f95ca inset, 0 1px 2px 0 #7f95ca inset;
+
+        &::before {
+            background-image: linear-gradient(to bottom, #cfddfd, #839ed8);
+            box-shadow: 1px 1px 0 #839ed8;
+        }
+    }
+}
+
+.scrollbar__button {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 1px;
+    background-image: radial-gradient(circle at 0 0, #dce6fc, #b7c9f2);
+    background-origin: top left;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7;
+
+    &:hover {
+        background-image: radial-gradient(circle at 0 0, #fdffff, #d2eafe, #b9dafb);
+        box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7, 0 0 0 1px #91abe1 inset;
+    }
+
+    &:active {
+        background-image: linear-gradient(to bottom right, #6e8ef1, #7da5f1, #9aaaee, #a3b5f3, #d2deeb);
+        box-shadow: 1px 1px 0 0 #84a5d5, 2px 2px 0 0 #eef2f7, 1px 1px 0 1px #828dd9 inset, -1px -1px 0 0px #b2d7f5 inset;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        left: 6px;
+        border-right: 2px solid #4d6185;
+        border-bottom: 2px solid #4d6185;
+    }
+}
+
+.scrollbar__button--up {
+    top: 0;
+
+    &::before {
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+}
+
+.scrollbar__button--down {
+    bottom: 0;
+
+    &::before {
+        transform: rotate(45deg);
+        bottom: 7px;
+    }
+}
