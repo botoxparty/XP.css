@@ -17,13 +17,15 @@ The easiest way to use XP.css is to import it from [unpkg](https://unpkg.com/).
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>XP.css example</title>
     <meta charset="UTF-8" />
-    // Windows XP Theme (include only one theme at a time)
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-    // Windows 98 Theme (include only one theme at a time)
+
+    <!-- Windows 98 Theme (include only one theme at a time) -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />
   </head>
 
