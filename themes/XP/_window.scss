@@ -74,6 +74,15 @@
             background-image: svg-load("./icon/maximize-active.svg");
         }
     }
+    button[aria-label="Restore"] {
+        background-image: svg-load("./icon/restore.svg");
+        &:hover {
+            background-image: svg-load("./icon/restore-hover.svg");
+        }
+        &:not(:disabled):active {
+            background-image: svg-load("./icon/restore-active.svg");
+        }
+    }
     button[aria-label="Help"] {
         background-image: svg-load("./icon/help.svg");
         &:hover {
