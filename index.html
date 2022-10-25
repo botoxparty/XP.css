@@ -41,6 +41,7 @@
             </ul>
           </li>
           <li><a href="#tree-view">TreeView</a></li>
+          <li><a href="#progress-bar">ProgressBar</a></li>
         </ul>
       </li>
       <li><a href="#issues-contributing-etc">Issues, Contributing, etc.</a></li>
@@ -858,7 +859,7 @@ import "xp.css/dist/98.css";</pre>
   <div class="title-bar-text">A Title Bar</div>
   <div class="title-bar-controls">
     <button aria-label="Minimize"></button>
-    <button aria-label="Maximize"></button>
+    <button aria-label="Restore"></button>
     <button aria-label="Close"></button>
   </div>
 </div>
@@ -878,7 +879,7 @@ import "xp.css/dist/98.css";</pre>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title-bar-text&quot;</span>&gt;</span>A Title Bar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title-bar-controls&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Minimize&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Maximize&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Restore&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Close&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1154,7 +1155,7 @@ import "xp.css/dist/98.css";</pre>
         </blockquote>
 
         <p>
-          You can render a status bar with the <code>status-bar</code> class, 
+          You can render a status bar with the <code>status-bar</code> class,
           and <code>status-bar-field</code> for every child text element.
         </p>
 
@@ -1200,7 +1201,7 @@ import "xp.css/dist/98.css";</pre>
       </details>
     </div>
 
-       
+      
     </section>
 
     <section class="component">
@@ -1339,6 +1340,55 @@ import "xp.css/dist/98.css";</pre>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
       </details>
     </div>
+      </div>
+    </section>
+
+    <section class="component">
+      <h3 id="progress-bar">ProgressBar</h3>
+      <div>
+        <blockquote>
+          With a <em>progress bar</em>, users can follow the progress
+          of a lengthy operation. A progress bar may either show an approximate
+          percentage of completion (determinate) or indicate that an operation is
+          ongoing (indeterminate)
+          <footer>
+              &mdash; <a href="https://learn.microsoft.com/en-us/windows/win32/uxguide/progress-bars">Microsoft Windows
+            User Experience - Progress Bars</a>
+          </footer>
+        </blockquote>
+
+        <p>
+          To render a progress bar, use a <code>&lt;progress&gt;</code> element.
+        </p>
+
+        <p>
+          The <code>max</code> attribute describes how much work the task indicated by the progress element requires, if present, must have a value greater than 0 and be a valid floating point number. The default value is 1.
+        </p>
+
+        <p>
+          The <code>value</code> attribute specifies how much of the task that has been completed. It must be a valid floating point number between 0 and max, or between 0 and 1 if max is omitted.
+        </p>
+
+        <div class="example">
+      <progress max="100" value="70"></progress>
+      <details>
+        <summary>Show code</summary>
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">max</span>=<span class="hljs-string">&quot;100&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span></code></pre>
+      </details>
+    </div>
+
+        <p>
+          If there is no <code>value</code> attribute, the progress bar is indeterminate; this indicates that an activity is ongoing with no indication of how long it is expected to take.
+        </p>
+
+        <div class="example">
+      <progress></progress>
+      <details>
+        <summary>Show code</summary>
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">progress</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span></code></pre>
+      </details>
+    </div>
+
       </div>
     </section>
 
