@@ -26,7 +26,7 @@ menu[role="tablist"] {
         display: block;
         color: #222;
         text-decoration: none;
-        min-width: unset;
+        min-width: 25px;
         &[aria-selected="true"] {
             padding-bottom: 2px;
             margin-top: -2px;
